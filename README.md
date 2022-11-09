@@ -1,1 +1,1 @@
-# studentPickUp
+# Student Pick Up Webapp (Mini Proj)
