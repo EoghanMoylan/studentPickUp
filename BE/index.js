@@ -4,6 +4,8 @@ const helmet = require("helmet");
 const app = express();
 const db = require("./config/database");
 
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
 //helmet sets various HTTP headers adding some basic security (see https://www.securecoding.com/blog/using-helmetjs/)
 app.use(helmet());
 
