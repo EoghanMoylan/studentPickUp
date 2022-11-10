@@ -1,0 +1,130 @@
+[
+    {
+        "carReg" : "11-C-22",
+        "studentID" : "1"
+    },
+    {
+        "carReg" : "12231-C-22",
+        "studentID" : "2"
+    },
+    {
+        "carReg" : "11-D-12",
+        "studentID" : "3"
+    },
+    {
+        "carReg" : "14-D-12",
+        "studentID" : "3"
+    },
+    {
+        "carReg" : "11003-TL-23",
+        "studentID" : "4"
+    },
+    {
+        "carReg" : "11-CC-16",
+        "studentID" : "5"
+    },
+    {
+        "carReg" : "1221-PH-22",
+        "studentID" : "6"
+    },
+    {
+        "carReg" : "133-T-22",
+        "studentID" : "7"
+    },
+    {
+        "carReg" : "1910-F-09",
+        "studentID" : "8"
+    },
+    {
+        "carReg" : "00923-G-00",
+        "studentID" : "9"
+    },
+    {
+        "carReg" : "199-H-12",
+        "studentID" : "10"
+    },
+    {
+        "carReg" : "199-D-22",
+        "studentID" : "10"
+    },
+    {
+        "carReg" : "1-F-22",
+        "studentID" : "11"
+    },
+    {
+        "carReg" : "11-LT-13",
+        "studentID" : "12"
+    },
+    {
+        "carReg" : "10-M-12",
+        "studentID" : "13"
+    },
+    {
+        "carReg" : "13-GL-12",
+        "studentID" : "14"
+    },
+    {
+        "carReg" : "122-KK-22",
+        "studentID" : "15"
+    },
+    {
+        "carReg" : "112-KL-02",
+        "studentID" : "16"
+    },
+    {
+        "carReg" : "102-KK-20",
+        "studentID" : "17"
+    },
+    {
+        "carReg" : "182-F-21",
+        "studentID" : "18"
+    },
+    {
+        "carReg" : "177-D-05",
+        "studentID" : "19"
+    },
+    {
+        "carReg" : "121-G-12",
+        "studentID" : "20"
+    },
+    {
+        "carReg" : "711-G-92",
+        "studentID" : "20"
+    },
+    {
+        "carReg" : "144-D-08",
+        "studentID" : "21"
+    },
+    {
+        "carReg" : "881-C-22",
+        "studentID" : "22"
+    },
+    {
+        "carReg" : "1221-C-15",
+        "studentID" : "23"
+    },
+    {
+        "carReg" : "111-KL-14",
+        "studentID" : "24"
+    },
+    {
+        "carReg" : "62321-F-92",
+        "studentID" : "25"
+    },
+    {
+        "carReg" : "1132-G-82",
+        "studentID" : "14"
+    },
+    {
+        "carReg" : "66521-G-82",
+        "studentID" : "18"
+    },
+    {
+        "carReg" : "121-C-72",
+        "studentID" : "9"
+    },
+    {
+        "carReg" : "19921-H-76",
+        "studentID" : "17"
+    }
+ ]
