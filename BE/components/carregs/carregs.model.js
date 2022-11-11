@@ -28,6 +28,6 @@ const CarReg = db.define(
     }
 );
 
-CarReg.belongsTo(Student, {foreignKey : "id"});
+CarReg.belongsTo(Student, {foreignKey : "studentID"});
 
 exports.CarReg = CarReg;

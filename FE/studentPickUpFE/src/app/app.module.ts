@@ -12,6 +12,8 @@ import {AlertModule} from 'ngx-bootstrap/alert';
 import {MatInputModule} from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http'
     BrowserModule,
     BrowserAnimationsModule,
     MatCardModule,
+    FormsModule,
     MatTableModule,
     AlertModule,
     HttpClientModule,
