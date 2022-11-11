@@ -29,6 +29,10 @@ export class StudentpickupComponent implements OnInit {
       if(res.student_details != undefined){
         this.student_details = res.student_details;
         this.student = this.student_details.student;
+
+        console.log(typeof this.student.isPresent);
+        console.log(this.student.isPresent);
+
         this.carReg = "";
       }
     });
