@@ -10,6 +10,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon'; 
 import {AlertModule} from 'ngx-bootstrap/alert';
 import {MatInputModule} from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -18,9 +20,11 @@ import {MatInputModule} from '@angular/material/input';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     MatCardModule,
     MatTableModule,
     AlertModule,
+    HttpClientModule,
     MatIconModule,
     MatInputModule,
     MatToolbarModule,
