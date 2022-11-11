@@ -18,10 +18,10 @@ exports.resetData = async (req, res) => {
         await CarReg.CarReg.bulkCreate(initCarRegJson, {ignoreDuplicates : true, returning: true, logging: console.log });
         await Classroom.Classroom.bulkCreate(initClassroomsJson, {ignoreDuplicates : true, returning: true, logging: console.log });
 
-        res.send(200, "Data Reset");
+        res.send(200, {"return_message" : "Data Reset"});
     }
 
     catch(error){
-        res.send(500, error);
+        res.send(500, {"return_message" :error});
     }
 }

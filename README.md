@@ -9,6 +9,8 @@ I've also included some car regs below to get you started without needing to go 
 
 # How to Use
 
+(by hitting the "_Refresh Data_" button in the toolbar you will update all the data in the DB, resetting everything to their default values, this is just for you to reset and test as you need. It is not intended to be production viable).
+
 Start by going here : 
 Some car regs to get you started :
 ```

@@ -20,20 +20,29 @@ export class StudentpickupComponent implements OnInit {
     this.getClassroomsInit();
   }
   getStudent(){
+    this.clearData();
+
     this.apiService.getStudentByCarReg(this.carReg).subscribe((res: any) => {
       if(res.student_details != undefined){
         this.student_details = res.student_details;
         this.student = this.student_details.student;
-        this.populateCard();
+        this.carReg = "";
       }
     });
 
   }
 
-  populateCard(){
-    this.carReg = "";
-
+  clearData(){
+    this.student_details = "";
+    this.student = "";
   }
+
+  resetData(){
+    this.apiService.resetData().subscribe((res: any) => {
+      this.clearData();
+    });
+  }
+  
 
   getClassroomsInit(){
     this.apiService.getAllClassrooms().subscribe((res: any) => {

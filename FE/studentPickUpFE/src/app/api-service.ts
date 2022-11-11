@@ -23,5 +23,7 @@ export class ApiService {
   getAllClassrooms() {
     return this.http.get(this.rootURL + '/classrooms/');
   }
-
+  resetData() {
+    return this.http.patch(this.rootURL + '/reset/', null);
+  }
 }
