@@ -36,5 +36,9 @@ const Student = db.define(
   }
 );
 
+
 Student.belongsTo(Classroom, {foreignKey : "classroomID"});
+Classroom.hasMany(Student, {foreignKey : "classroomID" });
+
+exports.Classroom = Classroom;
 exports.Student = Student;

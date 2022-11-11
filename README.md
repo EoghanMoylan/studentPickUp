@@ -2,7 +2,7 @@
 
 
 This is repo contains both the BE and FE projects for the Student Pick Up mini project. 
-Additional setup info (such as docker commands) can be found below or in the /scripts&other dir
+Additional setup info (such as docker commands) can be found below or in the /scripts&other dir, you'll also find a postman collection here if you want to test some of the calls yourself.
 You can also find some diagrams in the /Docs dir. If you want a full list of students, classrooms and car regs you can find them under their respective JSON files in the BE dir. 
 
 I've also included some car regs below to get you started without needing to go searching for them. 
@@ -70,6 +70,17 @@ You may need to run the follwing also.
 
 Include a `.env` to include in your /BE directory.
 
+Install Sequelize-cli 
+
+`npm i -g sequelize-cli`
+
+and now run the migrations
+
+`sequelize db:migrate`
+
+Now start the server 
+
+`node index.js`
 
 ## To Install FE
 

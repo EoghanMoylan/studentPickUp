@@ -22,7 +22,7 @@
             <div class="col-lg-6 student-box" *ngFor="let classroom of classrooms">
                 <mat-card>
                     <mat-card-title>{{classroom.classroomName}}</mat-card-title>
-                    <mat-card-subtitle><mat-icon class="mat-icon-overwrite">people</mat-icon>Students Remaining : </mat-card-subtitle>         
+                    <mat-card-subtitle><mat-icon class="mat-icon-overwrite">people</mat-icon>Students Remaining : {{studentsRemaining[classroom.id]}} </mat-card-subtitle>         
                     <mat-card-content>
                         <mat-icon class="mat-icon-overwrite">school</mat-icon> 
 
@@ -35,9 +35,9 @@
 
                         <!-- Set of fields if the wrong box or isn't present (only mat-icon cares about presence)-->
 
-                        <input *ngIf="[student.classroomID]!=(classroom.id)" [readonly]="true" name="classroomStudentFirstText{{classroom.id}}"  matInput placeholder="No student">
-                        <input *ngIf="[student.classroomID]!=(classroom.id)" [readonly]="true" name="classroomStudentLastText{{classroom.id}}" matInput placeholder="No student">
-                        <input *ngIf="[student.classroomID]!=(classroom.id)" [readonly]="true" name="classroomStudentisCarReg{{classroom.id}}" matInput placeholder="No reg entered">
+                        <input *ngIf="[student.classroomID]!=(classroom.id)" [readonly]="true"  matInput placeholder="No student">
+                        <input *ngIf="[student.classroomID]!=(classroom.id)" [readonly]="true"  matInput placeholder="No student">
+                        <input *ngIf="[student.classroomID]!=(classroom.id)" [readonly]="true"  matInput placeholder="No reg entered">
                         <mat-icon *ngIf="(student.isPresent == false) || [student.classroomID]!=(classroom.id)" class="mat-icon-overwrite absent">close</mat-icon>
                       </mat-card-content>
                     <mat-card-actions align="end">
