@@ -40,12 +40,14 @@
                         <input *ngIf="[student.classroomID]!=(classroom.id)" [readonly]="true" name="classroomStudentisCarReg{{classroom.id}}" matInput placeholder="No reg entered">
                         <mat-icon *ngIf="![student.isPresent] || [student.classroomID]!=(classroom.id)" class="mat-icon-overwrite">close</mat-icon>
 
+                        {{student.isPresent}}
+
                       </mat-card-content>
                     <mat-card-actions align="end">
                         <!-- Mark button as inactive if student not in correct class or not present -->
                         <button disabled *ngIf="![student.isPresent] || [student.classroomID]!=(classroom.id)" mat-flat-button color="accent">Mark Student</button>
                         <!-- Mark button as active -->
-                        <button *ngIf="[student.isPresent] && [student.classroomID]==(classroom.id)" mat-flat-button color="accent">Mark Student</button>
+                        <button *ngIf="[student.isPresent] && [student.classroomID]==(classroom.id)" (click)="updateStudent()" mat-flat-button color="accent">Mark Student</button>
                     </mat-card-actions>
                 </mat-card>
             </div>

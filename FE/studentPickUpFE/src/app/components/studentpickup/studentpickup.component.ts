@@ -22,6 +22,9 @@ export class StudentpickupComponent implements OnInit {
   getStudent(){
     this.clearData();
 
+    //to stop accidentally adding space when entering data
+    this.carReg = this.carReg.trim();
+
     this.apiService.getStudentByCarReg(this.carReg).subscribe((res: any) => {
       if(res.student_details != undefined){
         this.student_details = res.student_details;
@@ -29,7 +32,14 @@ export class StudentpickupComponent implements OnInit {
         this.carReg = "";
       }
     });
+  }
 
+  updateStudent(){
+    this.student.isPresent = false;
+    this.apiService.updateStudent(this.student).subscribe((res: any) => {
+      this.clearData();
+      console.log(res);
+    });
   }
 
   clearData(){
@@ -43,7 +53,6 @@ export class StudentpickupComponent implements OnInit {
     });
   }
   
-
   getClassroomsInit(){
     this.apiService.getAllClassrooms().subscribe((res: any) => {
       this.classrooms = res.classrooms;
