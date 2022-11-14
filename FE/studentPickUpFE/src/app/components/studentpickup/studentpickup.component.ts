@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../api-service';
 import { ToastrService } from 'ngx-toastr';
 
-
 @Component({
   selector: 'app-studentpickup',
   templateUrl: './studentpickup.component.html',

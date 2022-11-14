@@ -90,6 +90,10 @@ To start :
 
 `ng serve` 
 
+## Testing
+You will find some unit tests under `BE/test/all.test.js`
+(I only created a few, in a production environment these would be much more extensive)
+
 # Links
 
 Link to demo version
