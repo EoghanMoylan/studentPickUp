@@ -96,4 +96,6 @@ You will find some unit tests under `BE/test/all.test.js`
 
 # Links
 
-Link to demo version
+(this is all hosted on AWS behind Nginx)
+
+Link to demo version : http://ec2-18-237-66-157.us-west-2.compute.amazonaws.com/
